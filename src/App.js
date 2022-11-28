@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { v4 as uid } from "uuid";
 
 import UpdateTask from "./components/UpdateTask";
@@ -44,14 +44,14 @@ function App() {
 
   // delete task
   const deleteTask = (id) => {
-    setTodo(todo.filter((task) => task.id != id));
+    setTodo(todo.filter((task) => task.id !== id));
   };
 
   // mark task as done or completed
   const markDone = (id) => {
     setTodo(
       todo.map((task) =>
-        task.id == id ? { ...task, status: !task.status } : task
+        task.id === id ? { ...task, status: !task.status } : task
       )
     );
   };
