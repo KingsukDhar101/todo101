@@ -8,7 +8,7 @@ const Todo = ({ task, index, markDone, setUpdateData, deleteTask }) => {
       <div className="col taskBg">
         <div className={task.status ? "done" : ""}>
           <span className="taskNumber">{index + 1}</span>
-          <span className="taskText">{task.title}</span>
+          <span className="taskText">{task?.title?.length >= 20 ? task.title.substr(0, 21)+"..." : task.title}</span>
         </div>
 
         <div className="iconswrap">

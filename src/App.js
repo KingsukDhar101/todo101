@@ -10,18 +10,18 @@ import Todo from "./components/Todo";
 function App() {
   // tasks state
   const [todo, setTodo] = useState([
-    // {
-    //   id: uid(),
-    //   title: "task 1",
-    //   status: false,
-    //   createdAt: new Date().toLocaleTimeString(),
-    // },
-    // {
-    //   id: uid(),
-    //   title: "task 2",
-    //   status: false,
-    //   createdAt: new Date().toLocaleTimeString(),
-    // },
+    {
+      id: uid(),
+      title: "task 1",
+      status: false,
+      createdAt: new Date().toLocaleTimeString(),
+    },
+    {
+      id: uid(),
+      title: "task 2",
+      status: false,
+      createdAt: new Date().toLocaleTimeString(),
+    },
   ]);
 
   // temp state

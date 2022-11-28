@@ -4,21 +4,19 @@ const UpdateTask = ({ updateData, changeHolder, updateTask, cancelUpdate }) => {
   return (
     <>
       {/* Update Task */}
-      <div className="row" style={{ marginBottom: "20px" }}>
-        <div className="col">
-          <input
-            className="form-control form-control-lg"
-            value={updateData && updateData.title}
-            onChange={(e) => {
-              changeHolder(e);
-            }}
-          />
-        </div>
-        <div className="col-auto">
-          <button className="btn btn-lg btn-success mr-10" onClick={updateTask}>
+      <div className="wrapper" style={{ marginBottom: "20px" }}>
+        <input
+          className="input_box"
+          value={updateData && updateData.title}
+          onChange={(e) => {
+            changeHolder(e);
+          }}
+        />
+        <div style={{display:"flex", alignItems:"center", justifyContent:"center", gap: "10px",}}>
+          <button className="green_button" onClick={updateTask}>
             Update
           </button>
-          <button className="btn btn-lg btn-warning" onClick={cancelUpdate}>
+          <button className="yellow_button" onClick={cancelUpdate}>
             Cancel
           </button>
         </div>

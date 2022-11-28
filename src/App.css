@@ -63,3 +63,52 @@ body {
 .mr-10{
   margin-right: 10px;
 }
+
+.wrapper{ 
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.input_box{
+  flex: 1;
+  border: none;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 6px;
+}
+.input_box:focus{
+  outline: none;
+  border: none;
+}
+
+.green_button{
+  height: 40px; 
+  background-color: #198754;
+  border: none;
+  padding: 0 10px;
+  border-radius: 6px;
+  color: #fff;
+}
+.green_button:hover{
+  background-color: #157347;
+}
+.yellow_button{
+  height: 40px; 
+  background-color: #876301;
+  border: none;
+  padding: 0 13px;
+  border-radius: 6px;
+  color: #fff;
+}
+.yellow_button:hover{
+  background-color: #7a5a02;
+}
+
+@media screen and (max-width: 425px) {
+  .container-wrapper{
+    width: 85%;
+  }
+}
